@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="styles/styles.css">
+
+
+  <title>Frontend Mentor | Calculator app</title>
+
+ 
+</head>
+<body id="body">
+
+ <div class="page-content">
+   <div class="title">
+      <div class="toggle screen">
+        <h2>Calculadora</h2>
+        <div class="right">
+        <p id="one">1</p>
+        <p id="two">2</p>
+        <p id="three">3</p>
+
+        </div>
+      </div>
+      </div>
+   <div class="control screen">
+   <p>THEME</p>
+    <div class="box"><div id="circle"></div></div>
+    
+    </div>
+        <div class="screen">
+          <form name="calc">
+          <input type="text" name="text" readonly id="screen">
+          </form>
+        
+  </div>
+  <div class="body-calc">
+      <div class="caja-btn">
+        <button class="btn num" onclick="document.calc.text.value+='7'" >7</button>
+        <button class="btn num" onclick="document.calc.text.value+='8'">8</button>
+        <button class="btn num" onclick="document.calc.text.value+='9'" >9</button>
+        <button class="btn Del " onclick="del()">DEL</button>
+        <button class="btn num" onclick="document.calc.text.value+='4'" >4</button>
+        <button class="btn num" onclick="document.calc.text.value+='5'" >5</button>
+        <button class="btn num" onclick="document.calc.text.value+='6'" >6</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='+'">+</button>
+        <button class="btn num" onclick="document.calc.text.value+='1'" >1</button>
+        <button class="btn num" onclick="document.calc.text.value+='2'" >2</button>
+        <button class="btn num" onclick="document.calc.text.value+='3'" >3</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='-'">-</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='.'">.</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='0'" >0</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='/'">/</button>
+        <button class="btn symbol" onclick="document.calc.text.value+='*'">X</button>
+        <button class="btn reset" onclick="document.calc.text.value=''">RESET</button>
+        <button class=" equal" onclick="document.calc.text.value=eval(calc.text.value)">=</button>
+      </div>
+  </div>
+  <script src="app/js/script.js"></script>
+  
+  <div class="attribution">
+    <h4>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marcos Seimandi</a>.</h4>
+  </div>
+</body>
+</html>
